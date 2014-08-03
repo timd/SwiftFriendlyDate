@@ -1,9 +1,7 @@
 SwiftFriendlyDate
 =================
 
-Being a first try at creating a Swift extension, to add a friendly date formatter to the NSDate class that returns time intervals between two dates, for example:
-
-Being a small category on `NSDate` to return an `NSString` containing friendly time intervals between two dates, for example:
+Being a first try at creating a Swift extension, to add a friendly date formatter to the `NSDate` class that returns time intervals between two dates, for example:
 
 * `30 secs`
 * `2 hours 22 secs`
