@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		227BCC3F198E947C00133D30 /* FriendlyDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227D1DC7198E80DD00043E41 /* FriendlyDate.swift */; };
 		227D1DAB198E802E00043E41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227D1DAA198E802E00043E41 /* AppDelegate.swift */; };
 		227D1DAD198E802E00043E41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227D1DAC198E802E00043E41 /* ViewController.swift */; };
 		227D1DB0198E802E00043E41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 227D1DAE198E802E00043E41 /* Main.storyboard */; };
 		227D1DB2198E802E00043E41 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 227D1DB1198E802E00043E41 /* Images.xcassets */; };
 		227D1DBE198E802F00043E41 /* SwiftFriendlyDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227D1DBD198E802F00043E41 /* SwiftFriendlyDateTests.swift */; };
+		227D1DC8198E80DD00043E41 /* FriendlyDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227D1DC7198E80DD00043E41 /* FriendlyDate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		227D1DB8198E802F00043E41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 227D1D9D198E802E00043E41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 227D1DA4198E802E00043E41;
+			remoteInfo = SwiftFriendlyDate;
+		};
+		227D1DCC198E823B00043E41 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 227D1D9D198E802E00043E41 /* Project object */;
 			proxyType = 1;
@@ -34,6 +43,7 @@
 		227D1DB7198E802F00043E41 /* SwiftFriendlyDateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftFriendlyDateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		227D1DBC198E802F00043E41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		227D1DBD198E802F00043E41 /* SwiftFriendlyDateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFriendlyDateTests.swift; sourceTree = "<group>"; };
+		227D1DC7198E80DD00043E41 /* FriendlyDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendlyDate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +90,7 @@
 				227D1DAE198E802E00043E41 /* Main.storyboard */,
 				227D1DB1198E802E00043E41 /* Images.xcassets */,
 				227D1DA8198E802E00043E41 /* Supporting Files */,
+				227D1DC7198E80DD00043E41 /* FriendlyDate.swift */,
 			);
 			path = SwiftFriendlyDate;
 			sourceTree = "<group>";
@@ -141,6 +152,7 @@
 			);
 			dependencies = (
 				227D1DB9198E802F00043E41 /* PBXTargetDependency */,
+				227D1DCD198E823B00043E41 /* PBXTargetDependency */,
 			);
 			name = SwiftFriendlyDateTests;
 			productName = SwiftFriendlyDateTests;
@@ -208,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				227D1DC8198E80DD00043E41 /* FriendlyDate.swift in Sources */,
 				227D1DAD198E802E00043E41 /* ViewController.swift in Sources */,
 				227D1DAB198E802E00043E41 /* AppDelegate.swift in Sources */,
 			);
@@ -217,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				227BCC3F198E947C00133D30 /* FriendlyDate.swift in Sources */,
 				227D1DBE198E802F00043E41 /* SwiftFriendlyDateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,6 +242,11 @@
 			isa = PBXTargetDependency;
 			target = 227D1DA4198E802E00043E41 /* SwiftFriendlyDate */;
 			targetProxy = 227D1DB8198E802F00043E41 /* PBXContainerItemProxy */;
+		};
+		227D1DCD198E823B00043E41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 227D1DA4198E802E00043E41 /* SwiftFriendlyDate */;
+			targetProxy = 227D1DCC198E823B00043E41 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -395,6 +414,7 @@
 				227D1DC3198E802F00043E41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		227D1DC4198E802F00043E41 /* Build configuration list for PBXNativeTarget "SwiftFriendlyDateTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +423,7 @@
 				227D1DC6198E802F00043E41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
