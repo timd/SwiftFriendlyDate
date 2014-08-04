@@ -14,6 +14,7 @@
 		227D1DB2198E802E00043E41 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 227D1DB1198E802E00043E41 /* Images.xcassets */; };
 		227D1DBE198E802F00043E41 /* SwiftFriendlyDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227D1DBD198E802F00043E41 /* SwiftFriendlyDateTests.swift */; };
 		227D1DC8198E80DD00043E41 /* FriendlyDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227D1DC7198E80DD00043E41 /* FriendlyDate.swift */; };
+		228C74B7198FB0DD00CC123F /* PartialIntervalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228C74B6198FB0DD00CC123F /* PartialIntervalTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		227D1DBC198E802F00043E41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		227D1DBD198E802F00043E41 /* SwiftFriendlyDateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFriendlyDateTests.swift; sourceTree = "<group>"; };
 		227D1DC7198E80DD00043E41 /* FriendlyDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendlyDate.swift; sourceTree = "<group>"; };
+		228C74B6198FB0DD00CC123F /* PartialIntervalTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartialIntervalTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				227D1DBD198E802F00043E41 /* SwiftFriendlyDateTests.swift */,
+				228C74B6198FB0DD00CC123F /* PartialIntervalTests.swift */,
 				227D1DBB198E802F00043E41 /* Supporting Files */,
 			);
 			path = SwiftFriendlyDateTests;
@@ -232,6 +235,7 @@
 			files = (
 				227BCC3F198E947C00133D30 /* FriendlyDate.swift in Sources */,
 				227D1DBE198E802F00043E41 /* SwiftFriendlyDateTests.swift in Sources */,
+				228C74B7198FB0DD00CC123F /* PartialIntervalTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

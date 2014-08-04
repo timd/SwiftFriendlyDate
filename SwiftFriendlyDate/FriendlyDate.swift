@@ -10,7 +10,7 @@ import Foundation
 
 extension NSDate {
     
-    class func friendlyIntervalBetweenDates(firstDate: NSDate, secondDate: NSDate) -> String {
+    class func friendlyIntervalBetweenDates(firstDate: NSDate, secondDate: NSDate) -> String? {
         
         var firstTimeInterval: NSTimeInterval = firstDate.timeIntervalSince1970
         
@@ -82,12 +82,97 @@ extension NSDate {
             
         }
         
-        return "not yet implemented"
-        
+        return nil
     }
     
-    class func partialIntervalBetweenDates(firstDate: NSDate, secondDate:NSDate) -> String {
-        return "not yet implemented"
+    class func partialIntervalBetweenDates(firstDate: NSDate, secondDate:NSDate) -> String? {
+        
+        var firstTimeInterval: NSTimeInterval = firstDate.timeIntervalSince1970
+        var secondTimeInterval: NSTimeInterval = secondDate.timeIntervalSince1970
+        
+        var hasDays = false
+        var hasHours = false
+        var hasMins = false
+        
+        if secondTimeInterval > firstTimeInterval {
+            
+            var difference: Int = Int(secondTimeInterval - firstTimeInterval)
+            
+            var days = Int(abs(difference / 86400))
+            
+            if (days > 0) {
+                hasDays = true
+                var daySeconds = days * 86400;
+                difference = difference - daySeconds;
+            }
+            
+            var hours = abs(difference / 3600);
+            
+            if (hours > 0) {
+                hasHours = true
+                var hourSeconds = hours * 3600;
+                difference = difference - hourSeconds;
+            }
+            
+            var mins = (abs)(difference / 60);
+            
+            if (mins > 0) {
+                hasMins = true
+                var minSeconds = mins * 60;
+                difference = difference - minSeconds;
+            }
+            
+            var results: String = ""
+            
+            if (days == 1) {
+                results += "1 day "
+            }
+            
+            if (days > 1) {
+                results += "\(days) days "
+            }
+            
+            if (hours == 1) {
+                results += "1 hour "
+            }
+            
+            if (hours > 1) {
+                results += "\(hours) hours "
+            }
+            
+            if hasHours == false {
+                
+                if (mins == 1) {
+                    results += "1 min "
+                }
+            
+                if (mins > 1) {
+                    results += "\(mins) mins "
+                }
+                
+            }
+            
+            if hasMins == false {
+                
+                if (difference == 1) {
+                    results += "1 sec"
+                }
+            
+                if (difference > 1) {
+                    results += "\(difference) secs"
+                }
+                
+            }
+            
+            // Trim trailing white space
+            var trimmedString: String = results.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+            
+            return trimmedString;
+            
+        }
+        
+        return nil
+
     }
     
 }

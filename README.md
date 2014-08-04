@@ -22,11 +22,6 @@ It extends the `NSDate` class to add two class methods:
 
 Both methods handle pluralisation.
 
-Work in progress
----
-* `friendlyIntervalBetweenDates(firstDate: NSDate, secondDate: NSDate)` will eventually return an optional `nil` value if invalid dates are passed in (e.g. the second date is before the first date). Currently it returns `Not yet implemented` :(
-* `partialIntervalBetweenDates(firstDate: NSDate, secondDate:NSDate)` is not yet implemented
-
 Usage
 ---
 
