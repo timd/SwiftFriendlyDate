@@ -22,6 +22,8 @@ It extends the `NSDate` class to add two class methods:
 
 Both methods handle pluralisation.
 
+It's based on an Objective-C version, which can be found here: [https://github.com/timd/FriendlyNSDate](https://github.com/timd/FriendlyNSDate)
+
 Usage
 ---
 
