@@ -10,7 +10,7 @@ import Foundation
 
 extension NSDate {
     
-    func friendlyIntervalBetweenDates(firstDate: NSDate, secondDate: NSDate) -> String {
+    class func friendlyIntervalBetweenDates(firstDate: NSDate, secondDate: NSDate) -> String {
         
         var firstTimeInterval: NSTimeInterval = firstDate.timeIntervalSince1970
         
@@ -86,7 +86,7 @@ extension NSDate {
         
     }
     
-    func partialIntervalBetweenDates(firstDate: NSDate, secondDate:NSDate) -> String {
+    class func partialIntervalBetweenDates(firstDate: NSDate, secondDate:NSDate) -> String {
         return "not yet implemented"
     }
     

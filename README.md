@@ -7,7 +7,7 @@ Being a first try at creating a Swift extension, to add a friendly date formatte
 * `2 hours 22 secs`
 * `1 day 10 hours 15 secs`
 
-It extends the `NSDate` class to add two methods:
+It extends the `NSDate` class to add two class methods:
 
 * `func friendlyIntervalBetweenDates(firstDate: NSDate, secondDate: NSDate) -> String`
 * `func partialIntervalBetweenDates(firstDate: NSDate, secondDate:NSDate) -> String`
@@ -34,7 +34,7 @@ Include `FriendlyDate.swift` in your project.
 
     var firstDate = NSDate()
     var secondDate = NSDate(timeInterval: (90), sinceDate: firstDate)
-    let response = NSDate().friendlyIntervalBetweenDates(firstDate, secondDate: secondDate)
+    let response = NSDate.friendlyIntervalBetweenDates(firstDate, secondDate: secondDate)
 
 will return
 
